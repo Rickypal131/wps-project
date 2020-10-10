@@ -4,6 +4,8 @@
             
                
 
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,6 +55,10 @@ li.dropdown {
   text-align: left;
 }
 
+.mySlides {
+  
+ float: right;
+}
 .dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
@@ -162,12 +168,30 @@ li.dropdown {
       <a href="#">Disease and Symptoms</a>
     </div>
   </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Types</a>
+    <div class="dropdown-content">
+      <a href="#">Subsistance Farming</a>
+      <a href="#">Shifting Agriculture</a>
+      <a href="#">Plantatioon Agriculture</a>
+      <a href="#">Intensive Farming</a>
+      <a href="#">Dry Farming</a>
+      <a href="#">Mixed and multiple Farming</a>
+      <a href="#">Terrace Farming</a>
+      <a href="#">crop Rotation</a>
+
+    </div>
+  </li>
   <li><a href="#">Market</a> </li>
   <li><a href="#home">Exports Imports</a></li>
   <li><a href="#news">Weather</a></li>
 </ul>
 </header>
-
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="/project/pics/farm2.jpg" style="width:100%">
+  <img class="mySlides" src="/project/pics/farm2.jpg" style="width:100%">
+  <img class="mySlides" src="/project/pics/farm3.jpg" style="width:100%">
+</div>
 
 </body>
 <script>
@@ -181,6 +205,20 @@ function closeNav() {
 document.getElementById("top").style.width = "0";
 document.getElementById("main").style.marginLeft= "0";
 document.body.style.backgroundColor = "white";
+}
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
 
