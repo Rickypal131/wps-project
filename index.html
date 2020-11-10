@@ -1,235 +1,244 @@
-
-          
-        
-            
-               
-
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
-          <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
-      
-    </head>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+<head> 
+       <title>FArmer's Cafe</title>
+       <link rel="stylesheet" type="text/css" href="stylesheet.css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <script>
+          $(document).ready(function(){
+            $("#crops").click(function(){
+              $("#crops-d").slideToggle(1000);
+            });
+          });
 
-li {
-  float: left;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.mySlides {
-  
- float: right;
-}
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.top {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-      }
-      
-      .top a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-      }
-      
-      .top a:hover {
-        color: #f1f1f1;
-      }
-      
-      .top .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-      }
-      div>span{
-        font-size:30px;
-        cursor:pointer;
-        float: left;
-        background-image: url("black.jpg");
-        color: black;
-      #main {
-        transition: margin-right .5s;
-        padding: 16px;
-      }
-      
-      @media screen and (max-height: 450px) {
-        .top {padding-top: 15px;}
-        .top a {font-size: 18px;}
-      }
-      header
- {
-     background-color:powderblue;
-     height: 10vh;
-     background-size:cover;
- }
-</style>
+          $(document).ready(function(){
+            $("#text1").mouseenter(function(){
+              $("#text").slideDown(1000);
+              $("#sign").slideDown(1500);
+            });
+          });
+        </script>
 </head>
+<style>
+  .media{
+ margin-left: auto;
+ margin-right: auto;
+}
+.fa {
+ padding: 20px;
+ font-size: 30px;
+ width: 30px;
+ text-align: center;
+ text-decoration: none;
+ margin: 5px 2px;
+ border-radius: 50%;
+}
+
+.fa:hover {
+   opacity: 0.7;
+}
+
+.fa-facebook {
+ background: #3B5998;
+ color: white;
+ margin-left: 20px;
+}
+
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
+ margin-left: 20px;
+}
+.fa-google {
+ background: #dd4b39;
+ color: white;
+  margin-left: 20px;
+}
+
+.fa-linkedin {
+ background: #007bb5;
+ color: white;
+ margin-left: 20px;
+}
+.fa-instagram {
+ background: #125688;
+ color: white;
+ margin-left: 20px;
+}
+.media{
+ text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px; 
+ background-color: black;
+}
+
+
+.image {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+
+.text {
+ color: white;
+ font-size: 20px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ text-align: center;
+}
+</style>
+
 <body>
-  <header>
-  <div class="top" id="top">
-            
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <header>
+	    <div class="main">
+           <div class="logo">
+             <img src="/project/pics/logo.jpg">
+	     </div class="items">
+           <ul>
+            <li><a href="#">Home</a> </li>
+     	      <li><a href="#">Log in</a> </li>
+	          <li><a href="#">Services</a> </li>
+	          <li><a href="#about-section">About</a> </li>
+	          <li><a href="#media">Contact us</a> </li>
+            <li><a href="#">News</a> </li>
+            <li><a href="/project/wether.html">weather</a> </li>
+	          <li><img src="/project/pics/cart.jpg" style="width:30px;height:30px"></a> </li>
+           </ul>
+	     </div>
+     </header>
+
+     <div class="container" id="text1">
+      <img src="/project/pics/2nd.jpg"style="width:100%;">
+      <div class="text" id="text" ><h1 >Farming looks mighty easy when your plow is a pencil,and you're a thousand miles from the corn field.</h1><br>
+        
+       <a href="/project/inde.html"> <button class="sign" id="sign"  style="background-color: blue; color: bisque;"> Sign Up</button></a>
+      </div>
+     
+     </div>
+
+     <br><br><hr><br><br>
+     <div class="crops" id="crops">
+        <h2 style="background-color: green; color: black; text-align: center;">Major Crops</h2></div>
+      <div id="crops-d" class="container">
+         <img src="/project/pics/chicken.jpg" style="width:150px; height:150px;"><p>Pre Harvest</p>   
+    
+        <img src="/project/pics/pigform.jpg"  style="width:150px; height:150px;"><p>Post Harvest</p>   
+    
+          <img src="/project/pics/rice.jpg"  style="width:150px; height:150px;"><p>Management</p>  
+    
+             <img src="/project/pics/soil.jpg" style="width:150px; height:150px;"><p>Pre Harvest</p>
+             <img src="/project/pics/beef.jpg" alt="Mountains" style="width:150px; height:150px;"><p>Pre Harvest</p>
+             <img src="/project/pics/fruit.jpg" alt="Mountains" style="width:150px; height:150px;"><p>Pre Harvest</p>  
+  </div>
+    
+      </div>
+    </div>
    
-<a class="home" href="#home">Home</a> 
+     <div class="third">
+       <img src="/project/pics/3rd.jpg">
+     </div>
+     <br><br>
 
-<a class="contact" href="#contact">Contact</a>
-<a class ="about" href="#about">About</a>
-<a class="news" href="#news">News</a>
-<a class="risk" href="#risk">Services</a>
-</div>  
-  <div id="main">
-    <span onclick="openNav()">&#9776;</span>
-  
-    </div>  
+     <div class="list">
+      <ul>
+        <li><img src="/project/pics/li1.png"></li>
+        <li><img src="/project/pics/li2.png"></li>
+        <li><img src="/project/pics/li3.png"></li>
+        <li><img src="/project/pics/li4.png"></li>
+        <li><img src="/project/pics/li5.png"></li>
+      </ul>
+     </div>
+     
+    <br><br>
+    <br><br><br>
+    <br><br><br>
+    <br>
+   
 
-<ul>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Pre Harvest</a>
-    <div class="dropdown-content">
-      <a href="#">Fertiliser</a>
-      <a href="#">Pesticide</a>
-      <a href="#">Farm machinery</a>
-    </div>
-  </li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Management</a>
-    <div class="dropdown-content">
-      <a href="#">Risk management</a>
-      <a href="#">Crop Managementn</a>
-      
-    </div>
-  </li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Post Harvest</a>
-    <div class="dropdown-content">
-      <a href="#">Storage</a>
-    </div>
-  </li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Animal Husbandry</a>
-    <div class="dropdown-content">
-      <a href="#">Disease and Symptoms</a>
-    </div>
-  </li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Types</a>
-    <div class="dropdown-content">
-      <a href="#">Subsistance Farming</a>
-      <a href="#">Shifting Agriculture</a>
-      <a href="#">Plantatioon Agriculture</a>
-      <a href="#">Intensive Farming</a>
-      <a href="#">Dry Farming</a>
-      <a href="#">Mixed and multiple Farming</a>
-      <a href="#">Terrace Farming</a>
-      <a href="#">crop Rotation</a>
 
+  <div class="about-section">
+  <h1>About Us</h1>
+  <p>Some text about who we are and what we do.</p>
+  </div>
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+   <div class="column">
+    <div class="card">
+      <img src="/project/pics/userg.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Tejaswini</h2>
+        <p class="title">Developer</p>
+        <p>CSE student, Vasavi</p>
+        <p>rtejaswini@gmail.com</p>
+        <p><button class="buttonc">Contact</button></p>
+      </div>
     </div>
-  </li>
-  <li><a href="#">Market</a> </li>
-  <li><a href="#home">Exports Imports</a></li>
-  <li><a href="#news">Weather</a></li>
-</ul>
-</header>
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="farm1.jpg" style="width:100%">
-  <img class="mySlides" src="farm2.jpg" style="width:100%">
-  <img class="mySlides" src="farm3.jpg" style="width:100%">
+  </div>
+
+  <div class="column">
+   <div class="card">
+     <img src="/project/pics/userb.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Ricky pal</h2>
+        <p class="title">Developer</p>
+        <p>CSE student, Vasavi</p>
+        <p>g.rickpal13@gmail.com</p>
+        <p><button class="buttonc">Contact</button></p>
+      </div>
+    </div>
+  </div>
+ 
+
+    
+    <br>
+
+
+
+    <p class="top" style="font-style: initial;">Make The Green world</p>
+    <h2 class="head">Farming Practices To Preserve Land & Water</h2>
+    <div class="row">
+    <div class="column">
+    <img src="/project/pics/chicken.jpg" alt="Snow" style="width:150px; height:150px;"><p>Pre Harvest</p> 
+    </div>
+    <div class="column">
+    <img src="/project/pics/pigform.jpg" alt="Forest" style="width:150px; height:150px;"><p>Post Harvest</p> 
+    </div>
+    <div class="column">
+    <img src="/project/pics/rice.jpg" alt="Mountains" style="width:150px; height:150px;"><p>Management</p>
+    </div>
+    <div class="column">
+    <img src="/project/pics/soil.jpg" alt="Mountains" style="width:150px; height:150px;"><p>Pre Harvest</p> 
+    </div>
+    <br>
+    <div class="column">
+    <img src="/project/pics/fruit.jpg" alt="Mountains" style="width:150px; height:150px;"><p>Pre Harvest</p>
+    </div>
+    <div class="column">
+    <img src="/project/pics/beef.jpg" alt="Mountains" style="width:150px; height:150px;"><p>Pre Harvest</p>
+    </div>
+    </div>
+
+    
+    
+
+
+
+<br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="media" id="media">
+  <h2> Contact Us</h2>
+<a href="#" class="fa fa-facebook"></a>   
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>  
+<a href="#" class="fa fa-google"></a>   
 </div>
-
 </body>
-<script>
-  function openNav() {
-document.getElementById("top").style.width = "250px";
-document.getElementById("main").style.marginLeft = "250px";
-document.body.style.backgroundColor = "black";
-}
-
-function closeNav() {
-document.getElementById("top").style.width = "0";
-document.getElementById("main").style.marginLeft= "0";
-document.body.style.backgroundColor = "white";
-}
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-
 </html>
