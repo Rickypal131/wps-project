@@ -1,158 +1,208 @@
-.header{
-    padding-top: 2px;
-   
-    background-color: green;
-    border-radius: 4%;
-    }
-    .title{
-      margin-left: auto;
-      margin-left: auto;
-      text-align: center;
-    }
-    navb{
-      display: inline;
-      float: left;
-    }
-    .home1,.contact1,.about1{
-      color:black;
-      text-align: center;
-      margin-inline-start: 5px;
-      border: 1px solid blue;
-      background-color: #818181;
-    }
-    body{
-       background-color: black;
-        border: 2px solid black;
-    }
-    .top{
-        display: inline;
-        text-align: center;
-        margin: 0,10px,10px,0;
-        color: black;
-    }
-    .user{
-        float: right;
-        color: black;
-    }
-    .home{
-        padding: 0,5px,0,5px;
-       background-color: white;
-    }
-    .top {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-      }
-      
-      .top a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-      }
-      
-      .top a:hover {
-        color: #f1f1f1;
-      }
-      
-      .top .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-      }
-      div>span{
-        font-size:30px;
-        cursor:pointer;
-        float: left;
-        background-image: url("black.jpg");
-        color: whitesmoke;
-      #main {
-        transition: margin-right .5s;
-        padding: 16px;
-      }
-      
-      @media screen and (max-height: 450px) {
-        .top {padding-top: 15px;}
-        .top a {font-size: 18px;}
-      }
-      * {box-sizing: border-box}
-
-/* Full-width input fields */
-  input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+*{
+  margin:0;
+  padding:0;
+  font-family:Century Gothic;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+header
+{
+    background-image: url(../bg.jpg);
+    height: 12vh;
+    background-size:cover;
+    background-positon:center;
 }
-
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+ul
+{
+  float:right;
+  list-style-type:none;
+  margin-top:25px;
 }
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 20%;
+ul li
+{
+  display:inline-block;  
 }
-
-button:hover {
-  opacity:20%;
+ul li a
+{
+  margin-top: 7vh;
+  text-decoration:none;
+  color:black;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+ } 
+ul li a:hover
+{
+  background-color:green;
+  color:black;
+ } 
+.logo img
+{
+   margin-top: 3vh;
+   float:left;
+   width:160px;
+   height:90px;
 }
+.main
+{
+  max-width:1200px;
+  margin:auto;
+ }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
 .container {
-  padding: 16px;
-  color: #f1f1f1;
+ position: relative;
+ text-align: center;
+ color: black;
+
+}
+.container img
+ {
+   opacity: 0.8;
+ }
+ #sign{
+   display: none;
+   position: absolute;
+   height: 25px;
+   width: 60px;
+   align-self: auto;
+ }
+#text {
+  display: none;
+ 
+ border-width: 10px;
+ position: absolute;
+ font-style: sans-serif;
+ font-size: medium;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ border: 4px solid black;
 }
 
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.third img
+ {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 900px;
+   height: 400px;
+}
+.lis ul
+{
+ float: right;
+}
+.list ul li
+ {
+    display:inline-block; 
+    padding: 20px 50px;
+    float: left;
+ }
+.list ul
+ {
+    float: left;
+    margin-left: 320px;
+ }
+.pictures
+ {
+   border-radius: 50%;
+   float: right;
+        
+ }
+
+.iconDetails
+{
+  margin-left:10%;
+  float:right; 
+  height:100px;
+  width:100px; 
+} 
+
+.container2
+{
+ width:100%;
+ height:auto;
+ padding:10%;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
+h4 {
+   margin:0px;
 }
-      
+
+*, *:before, *:after 
+{
+ box-sizing: inherit;
+}
+
+.column {
+ margin-left: 160px;
+ float: left;
+ width: 33.3%;
+ padding: 0 8px;
+}
+
+.card {
+
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ margin: 8px;
+}
+
+.about-section {
+ padding: 50px;
+ text-align: center;
+ background-color: #474e5d;
+ color: white;
+}
+
+.container {
+ padding: 0 16px;
+}
+
+.container::after, .row::after
+{
+ content: "";
+ clear: both;
+ display: table;
+}
+
+.title {
+ color: grey;
+}
+
+.buttonc {
+ border: none;
+ outline: 0;
+ display: inline-block;
+ padding: 8px;
+ color: white;
+ background-color: #000;
+ text-align: center;
+ cursor: pointer;
+ width: 100%;
+}
+
+.buttonc:hover 
+{
+ background-color: #555;
+}
+
+@media screen and (max-width: 650px) 
+{
+ .column {
+   width: 100%;
+   display: block;
+ }
+
+.top .head{
+  text-align: center;
+}
+#crops{
+  padding: 5px;
+  text-align: center;
+  border: solid 1px black;
+  background-color: green;
+  display: none;
+}
+#crops-d{
+  display: none;
+  padding: 80px;
+  display:inline-block;
+}
