@@ -1,12 +1,14 @@
-<!doctype html>
+ <!doctype html>
+
 <html>
 
 <head> 
-       <title>FArmer's Cafe</title>
-       <link rel="stylesheet" type="text/css" href="style.css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       <title>Farmer's Cafe</title>
+       <link rel="stylesheet" type="text/css" href="stylesheet.css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+       </script>
        <script>
           $(document).ready(function(){
             $("#crops").click(function(){
@@ -23,11 +25,14 @@
         </script>
 </head>
 <style>
-  .media{
+
+.media
+{
  margin-left: auto;
  margin-right: auto;
 }
-.fa {
+.fa 
+{
  padding: 20px;
  font-size: 30px;
  width: 30px;
@@ -37,53 +42,58 @@
  border-radius: 50%;
 }
 
-.fa:hover {
+.fa:hover
+{
    opacity: 0.7;
 }
 
-.fa-facebook {
+.fa-facebook 
+{
  background: #3B5998;
  color: white;
  margin-left: 20px;
 }
 
-.fa-twitter {
+.fa-twitter 
+{
  background: #55ACEE;
  color: white;
  margin-left: 20px;
 }
-.fa-google {
+.fa-google 
+{
  background: #dd4b39;
  color: white;
   margin-left: 20px;
 }
 
-.fa-linkedin {
+.fa-linkedin 
+{
  background: #007bb5;
  color: white;
  margin-left: 20px;
 }
-.fa-instagram {
+.fa-instagram 
+{
  background: #125688;
  color: white;
  margin-left: 20px;
 }
-.media{
+.media
+{
  text-align: center;
   padding-bottom: 10px;
   padding-top: 10px; 
  background-color: black;
 }
-
-
-.image {
+.image
+{
  display: block;
  width: 100%;
  height: auto;
 }
-
-
-.text {
+.text 
+{
  color: white;
  font-size: 20px;
  position: absolute;
@@ -94,54 +104,37 @@
  transform: translate(-50%, -50%);
  text-align: center;
 }
+
 </style>
 
 <body>
      <header>
 	    <div class="main">
            <div class="logo">
-             <img src="logo.jpg">
-	     </div class="items">
+             <img src="logo.png">
+	       </div class="items">
            <ul>
-            <li><a href="#">Home</a> </li>
-     	      <li><a href="#">Log in</a> </li>
+     	      <li><a href="index.html">Home</a> </li>
 	          <li><a href="#">Services</a> </li>
 	          <li><a href="#about-section">About</a> </li>
-	          <li><a href="#media">Contact us</a> </li>
-            <li><a href="#">News</a> </li>
-            <li><a href="wether.html">weather</a> </li>
+	          <li><a href="mailto:ravitejaswiniperepi232@gmail.com">Contact us</a> </li>
+              <li><a href="#">News</a> </li>
+              <li><a href="weather.html">weather</a></li>
+              <li><a href="#">Login</a> </li>
+              <li><a href="signup.html">Sign up</a> </li>
 	          <li><img src="cart.jpg" style="width:30px;height:30px"></a> </li>
            </ul>
 	     </div>
      </header>
 
+
+
      <div class="container" id="text1">
       <img src="2nd.jpg"style="width:100%;">
-      <div class="text" id="text" ><h1 >Farming looks mighty easy when your plow is a pencil,and you're a thousand miles from the corn field.</h1><br>
-        
-       <a href="sign_index.html"> <button class="sign" id="sign"  style="background-color: blue; color: bisque;"> Sign Up</button></a>
-      </div>
-     
+      <div class="centered"><h1>Farming looks mighty easy when your plow is a pencil,and you're a thousand miles from the corn field.</h1></div>
      </div>
 
      <br><br><hr><br><br>
-     <div class="crops" id="crops">
-        <h2 style="background-color: green; color: black; text-align: center;">Major Crops</h2></div>
-      <div id="crops-d" class="container">
-         <img src="chicken.jpg" style="width:150px; height:150px;"><p>Pre Harvest</p>   
-    
-        <img src="pigform.jpg"  style="width:150px; height:150px;"><p>Post Harvest</p>   
-    
-          <img src="rice.jpg"  style="width:150px; height:150px;"><p>Management</p>  
-    
-             <img src="fruit.jpg" style="width:150px; height:150px;"><p>Pre Harvest</p>
-             <img src="beef.jpg" alt="Mountains" style="width:150px; height:150px;"><p>Pre Harvest</p>
-             <img src="fruit.jpg" alt="Mountains" style="width:150px; height:150px;"><p>Pre Harvest</p>  
-  </div>
-    
-      </div>
-    </div>
-   
      <div class="third">
        <img src="3rd.jpg">
      </div>
@@ -163,6 +156,40 @@
     <br>
    
 
+   <div class="menu1">
+   	 <a href="pigfarm.html">
+     <img class="menup" border="0" alt="W3Schools" src="pigfarm.jpg" width="250" height="250"></a>
+     <a href="fruit.html">
+     <img class="menup" border="0" alt="W3Schools" src="fruit.jpg" width="250" height="250"> </a>
+     <a href="poultry.html">
+     <img class="menup" border="0" alt="W3Schools" src="chicken.jpg" width="250" height="250"></a>
+   </div>
+   <div class=menu2>
+   	 <a href="rice.html">
+     <img class="menup"border="0" alt="W3Schools" src="rice.jpg" width="250" height="250"> </a>
+     <a href="soil.html">
+     <img class="menup" border="0" alt="W3Schools" src="soil.jpg" width="250" height="250"> </a>
+     <a href="beef.html">
+     <img class="menup" border="0" alt="W3Schools" src="beef.jpg" width="250" height="250"> </a>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 
   <div class="about-section">
   <h1>About Us</h1>
@@ -190,33 +217,42 @@
         <h2>Ricky pal</h2>
         <p class="title">Developer</p>
         <p>CSE student, Vasavi</p>
-        <p>g.rickpal13@gmail.com</p>
+        <p>rickpal@gmail.com</p>
         <p><button class="buttonc">Contact</button></p>
       </div>
     </div>
   </div>
  
 
-    
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
 
+     <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+-->
 
-
-  
-
-    
-    
 
 
 
 <br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="media" id="media">
+<div class="media">
   <h2> Contact Us</h2>
 <a href="#" class="fa fa-facebook"></a>   
 <a href="#" class="fa fa-linkedin"></a>
 <a href="#" class="fa fa-instagram"></a>  
 <a href="#" class="fa fa-google"></a>   
 </div>
+
 </body>
 </html>
