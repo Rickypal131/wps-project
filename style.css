@@ -1,177 +1,114 @@
- <!doctype html>
 
-<html>
 
-<head> 
-       <title>Farmer's Cafe</title>
-       <link rel="stylesheet" type="text/css" href="stylesheet.css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
-       </script>
-       <script>
-          $(document).ready(function(){
-            $("#crops").click(function(){
-              $("#crops-d").slideToggle(1000);
-            });
-          });
+ *{
+   margin:0;
+   padding:0;
+   font-family:Century Gothic;
+ }
 
-          $(document).ready(function(){
-            $("#text1").mouseenter(function(){
-              $("#text").slideDown(1000);
-              $("#sign").slideDown(1500);
-            });
-          });
-        </script>
-</head>
-<style>
+header
+ {
+     background-image: url(../bg.jpg);
+     height: 12vh;
+     background-size:cover;
+     background-positon:center;
+ }
+ul
+ {
+   float:right;
+   list-style-type:none;
+   margin-top:25px;
+ }
+ul li
+ {
+   display:inline-block;  
+ }
+ul li a
+ {
+   margin-top: 7vh;
+   text-decoration:none;
+   color:black;
+   padding: 5px 20px;
+   border: 1px solid transparent;
+   transition: 0.6s ease;
+  } 
+ul li a:hover
+ {
+   background-color:green;
+   color:black;
+  } 
+.logo img
+ {
+    margin-top: 3vh;
+    float:left;
+    width:160px;
+    height:90px;
+ }
+.main
+ {
+   max-width:1200px;
+   margin:auto;
+  }
 
-.media
-{
- margin-left: auto;
- margin-right: auto;
-}
-.fa 
-{
- padding: 20px;
- font-size: 30px;
- width: 30px;
- text-align: center;
- text-decoration: none;
- margin: 5px 2px;
- border-radius: 50%;
-}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
 
-.fa:hover
-{
-   opacity: 0.7;
 }
-
-.fa-facebook 
-{
- background: #3B5998;
- color: white;
- margin-left: 20px;
-}
-
-.fa-twitter 
-{
- background: #55ACEE;
- color: white;
- margin-left: 20px;
-}
-.fa-google 
-{
- background: #dd4b39;
- color: white;
-  margin-left: 20px;
-}
-
-.fa-linkedin 
-{
- background: #007bb5;
- color: white;
- margin-left: 20px;
-}
-.fa-instagram 
-{
- background: #125688;
- color: white;
- margin-left: 20px;
-}
-.media
-{
- text-align: center;
-  padding-bottom: 10px;
-  padding-top: 10px; 
- background-color: black;
-}
-.image
-{
- display: block;
- width: 100%;
- height: auto;
-}
-.text 
-{
- color: white;
- font-size: 20px;
- position: absolute;
- top: 50%;
- left: 50%;
- -webkit-transform: translate(-50%, -50%);
- -ms-transform: translate(-50%, -50%);
- transform: translate(-50%, -50%);
- text-align: center;
+.container img
+  {
+    opacity: 0.8;
+  }
+.centered {
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  font-style: sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-</style>
+.third img
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 400px;
+}
+.lis ul
+ {
+  float: right;
+ }
+.list ul li
+  {
+     display:inline-block; 
+     padding: 20px 50px;
+     float: left;
+  }
+.list ul
+  {
+     float: left;
+     margin-left: 320px;
+  }
 
-<body>
-     <header>
-	    <div class="main">
-           <div class="logo">
-             <img src="logo.png">
-	       </div class="items">
-           <ul>
-     	      <li><a href="index.html">Home</a> </li>
-	          <li><a href="#">Services</a> </li>
-	          <li><a href="#about-section">About</a> </li>
-	          <li><a href="mailto:ravitejaswiniperepi232@gmail.com">Contact us</a> </li>
-              <li><a href="#">News</a> </li>
-              <li><a href="weather.html">weather</a></li>
-              <li><a href="#">Login</a> </li>
-              <li><a href="signup.html">Sign up</a> </li>
-	          <li><img src="cart.jpg" style="width:30px;height:30px"></a> </li>
-           </ul>
-	     </div>
-     </header>
 
 
+.menu1,.menu2
+{
+  text-align: center;
+}
 
-     <div class="container" id="text1">
-      <img src="2nd.jpg"style="width:100%;">
-      <div class="centered"><h1>Farming looks mighty easy when your plow is a pencil,and you're a thousand miles from the corn field.</h1></div>
-     </div>
-
-     <br><br><hr><br><br>
-     <div class="third">
-       <img src="3rd.jpg">
-     </div>
-     <br><br>
-
-     <div class="list">
-      <ul>
-        <li><img src="li1.png"></li>
-        <li><img src="li2.png"></li>
-        <li><img src="li3.png"></li>
-        <li><img src="li4.png"></li>
-        <li><img src="li5.png"></li>
-      </ul>
-     </div>
-     
-    <br><br>
-    <br><br><br>
-    <br><br><br>
-    <br>
-   
-
-   <div class="menu1">
-   	 <a href="pigfarm.html">
-     <img class="menup" border="0" alt="W3Schools" src="pigfarm.jpg" width="250" height="250"></a>
-     <a href="fruit.html">
-     <img class="menup" border="0" alt="W3Schools" src="fruit.jpg" width="250" height="250"> </a>
-     <a href="poultry.html">
-     <img class="menup" border="0" alt="W3Schools" src="chicken.jpg" width="250" height="250"></a>
-   </div>
-   <div class=menu2>
-   	 <a href="rice.html">
-     <img class="menup"border="0" alt="W3Schools" src="rice.jpg" width="250" height="250"> </a>
-     <a href="soil.html">
-     <img class="menup" border="0" alt="W3Schools" src="soil.jpg" width="250" height="250"> </a>
-     <a href="beef.html">
-     <img class="menup" border="0" alt="W3Schools" src="beef.jpg" width="250" height="250"> </a>
-   </div>
+.menup
+{
+    display:inline-block;
+    margin:5px 20px;
+    padding:40px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
@@ -185,74 +122,92 @@
 
 
 
+.pictures
+  {
+    border-radius: 50%;
+    float: right;
+         
+  }
 
+.iconDetails
+ {
+   margin-left:10%;
+   float:right; 
+   height:100px;
+   width:100px; 
+} 
 
+.container2
+ {
+  width:100%;
+  height:auto;
+  padding:10%;
+}
 
+h4 {
+    margin:0px;
+}
 
-<!--
+*, *:before, *:after 
+{
+  box-sizing: inherit;
+}
 
-  <div class="about-section">
-  <h1>About Us</h1>
-  <p>Some text about who we are and what we do.</p>
-  </div>
-  <h2 style="text-align:center">Our Team</h2>
-  <div class="row">
-   <div class="column">
-    <div class="card">
-      <img src="userg.jpg" alt="Jane" style="width:100%">
-      <div class="container">
-        <h2>Tejaswini</h2>
-        <p class="title">Developer</p>
-        <p>CSE student, Vasavi</p>
-        <p>rtejaswini@gmail.com</p>
-        <p><button class="buttonc">Contact</button></p>
-      </div>
-    </div>
-  </div>
+.column {
+  margin-left: 160px;
+  float: left;
+  width: 33.3%;
+  padding: 0 8px;
+}
 
-  <div class="column">
-   <div class="card">
-     <img src="userb.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Ricky pal</h2>
-        <p class="title">Developer</p>
-        <p>CSE student, Vasavi</p>
-        <p>rickpal@gmail.com</p>
-        <p><button class="buttonc">Contact</button></p>
-      </div>
-    </div>
-  </div>
- 
+.card {
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
 
-     <br>
-    <br>
-    <br>
-    <br>
-    <br> <br>
-    <br>
-    <br>
-    <br>
-    <br>
--->
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
 
+.container {
+  padding: 0 16px;
+}
 
+.container::after, .row::after
+ {
+  content: "";
+  clear: both;
+  display: table;
+}
 
+.title {
+  color: grey;
+}
 
-<br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="media">
-  <h2> Contact Us</h2>
-<a href="#" class="fa fa-facebook"></a>   
-<a href="#" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-instagram"></a>  
-<a href="#" class="fa fa-google"></a>   
-</div>
+.buttonc {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
 
-</body>
-</html>
+.buttonc:hover 
+{
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) 
+{
+  .column {
+    width: 100%;
+    display: block;
+  
